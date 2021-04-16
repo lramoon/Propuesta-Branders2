@@ -1,0 +1,232 @@
+/*INICIO*/
+
+.icon {
+    color: #1b7a7b;
+    font-size: 2rem;
+}
+
+.bg-brand {
+    background-color: #111111;
+}
+
+.titulo {
+    font-size: 8.8rem;
+    font-weight: bolder;
+}
+
+// .circulo {
+//      width: 100px;
+//      height: 100px;
+//      -moz-border-radius: 50%;
+//      -webkit-border-radius: 50%;
+//      border-radius: 50%;
+//      background: #5cb85c;
+// }
+
+.shared {
+    transition: 2s;
+}
+
+.jou:hover {
+    background-color: #ff5000;
+    border-radius: 32%;
+    transition: 1s;
+}
+
+.jouDos:hover {
+    background-color: #ff5000;
+    border-radius: 32%;
+    transition: 1s;
+}
+
+.texto1:hover {
+    background-color: #ff5000;
+    border-radius: 50%;
+    transition: 1s;
+    color: white;
+}
+
+.texto2:hover {
+    background-color: #ff5000;
+    border-radius: 50%;
+    transition: 1s;
+    color: white;
+}
+
+
+
+.efectico:hover {
+    color: white;
+    box-shadow: inset 5em 1em gold;
+    transform: rotate(90deg);
+    transition: 1s;
+}
+
+.efecticoDos:hover {
+    color: white;
+    box-shadow: inset 5em 1em gold;
+    transform: rotate(-90deg);
+    transition: 1s;
+}
+
+.fondo-desaparece {
+    transition: .8s;
+}
+
+.red {
+    transition: 2s;
+    transform: translatex(15px);
+    background-color: hsla(5, 78%, 44%, 0.671);
+    color: white;
+}
+
+.hou:hover {
+    transition: all 1s !important;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+
+.alo:before {
+    content: "";
+    width: 40%;
+    height: 70%;
+    background: #f1f1f1;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 750px;
+}
+
+.carousel-caption-video {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 0 1.875rem;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.carousel-item video {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    font-family: "object-fit: cover;";
+    overflow: hidden;
+    position: relative;
+}
+
+
+/*Ajuste de video - responsive*/
+@media only screen and (min-width:320px) and (max-width:768px) {
+
+    .carousel-item {
+        height: 100vh;
+
+    }
+
+    .carousel-item video {
+        height: 105vh;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        font-family: "object-fit: cover;";
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel-caption-video {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        padding: 0 1.875rem;
+        width: 100%;
+    }
+
+}
+
+.b-sombreado {
+    background-image: linear-gradient(#ff5000, #ff5000);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 5px;
+}
+
+.c-section__title {
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: sideways-right;
+    text-orientation: sideways;
+    width: 100px;
+    position: absolute;
+    top: 59.25rem;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.b-left {
+    margin-top: 22px;
+    transform: rotate(-180deg);
+}
+
+
+.c-section__title:after {
+    content: "";
+    width: 6px;
+    height: 70px;
+    background: currentColor;
+    margin-right: 2.5rem;
+    order: -1;
+    flex-shrink: 1;
+}
+
+.b-effect:hover {
+    transform: scale(1.1);
+    background-color: #ff5000;
+    z-index: 10;
+    transition: all .5s;
+}
+
+.c-site-nav_trigger-icon:before {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    outline: 1px solid transparent;
+    border-radius: 5px;
+    transition-property: background-color, transform;
+    transition-duration: .3s;
+}
+
+.c-site-nav__trigger-icon {
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    flex: none;
+}
+
+.c-site-nav_trigger-icon:after {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    outline: 1px solid transparent;
+    border-radius: 5px;
+    transition-property: background-color, transform;
+    transition-duration: .3s;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
