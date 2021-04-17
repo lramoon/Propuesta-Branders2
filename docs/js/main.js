@@ -37,24 +37,42 @@ let conteprin = gsap.timeline({
 //     }
 // });
 
-conteprin.from(".context", {
+conteprin.to(".context", {
     duration: 2,
     x: -600,
     scale: 2,
+    ease: "linear",
+    force3D: true,
+    opacity: 0.9,
+    delay: 0.3,
+    // stagger: 0.2,
+}).from(".context", {
+    // duration: 2,
+    // x: -600,
+    // scale: 2,
     // ease: "bounce",
     // force3D: true,
-    opacity: 0.5,
-    // delay: 0.2,
+    // opacity: 0.5,
+    // // // // // // delay: 0.2,
     // stagger: 0.2,
-}).from(".cometa", {
+}).to(".cometa", {
     duration: 2,
     scale: 1.5,
     ease: "linear",
     force3D: true,
     opacity: 0,
-    delay: 0.2,
-    stagger: 0.2,
+    delay: 0.1,
+    // stagger: 0.2,
     transformOrigin: '50% 50%',
+}).from(".cometa", {
+    // duration: 2,
+    // // // // // // scale: .5,
+    // ease: "linear",
+    // // // // // // force3D: true,
+    // opacity: 0.5,
+    // delay: 0.2,
+    // stagger: 0.2,
+    // transformOrigin: '50% 50%',
 })
 
 gsap.to(".izquierda", {
