@@ -9,8 +9,9 @@
 }
 
 .titulo {
-  font-size: 8.8rem;
-  font-weight: bolder;
+  line-height: 5rem;
+  font-size: 9.5rem;
+  font-weight: 900;
 }
 
 .shared {
@@ -197,12 +198,12 @@
 }
 
 .b-effect:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: rotate(-20deg) scale(1.1);
+          transform: rotate(-20deg) scale(1.1);
   background-color: #ff5000;
   z-index: 10;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: linear .5s;
+  transition: linear .5s;
 }
 
 .c-site-nav_trigger-icon:before {

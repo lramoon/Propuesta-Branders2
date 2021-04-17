@@ -10,8 +10,9 @@
 }
 
 .titulo {
-    font-size: 8.8rem;
-    font-weight: bolder;
+    line-height: 5rem;
+    font-size: 9.5rem;
+    font-weight: 900;
 }
 
 // .circulo {
@@ -190,10 +191,11 @@
 }
 
 .b-effect:hover {
-    transform: scale(1.1);
+    // transform: scale(1.1);
+    transform: rotate(-20deg) scale(1.1);
     background-color: #ff5000;
     z-index: 10;
-    transition: all .5s;
+    transition: linear .5s;
 }
 
 .c-site-nav_trigger-icon:before {
