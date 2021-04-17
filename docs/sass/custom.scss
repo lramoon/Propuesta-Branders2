@@ -11,8 +11,14 @@
 
 .titulo {
     line-height: 5rem;
-    font-size: 9.5rem;
+    font-size: 10.5rem;
     font-weight: 900;
+}
+
+.otro:hover {
+    transition: .5s linear;
+    transform: translate3d(150deg);
+
 }
 
 // .circulo {

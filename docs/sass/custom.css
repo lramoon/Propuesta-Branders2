@@ -10,8 +10,15 @@
 
 .titulo {
   line-height: 5rem;
-  font-size: 9.5rem;
+  font-size: 10.5rem;
   font-weight: 900;
+}
+
+.otro:hover {
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+  -webkit-transform: translate3d(150deg);
+          transform: translate3d(150deg);
 }
 
 .shared {
