@@ -1,41 +1,17 @@
 gsap.registerPlugin(ScrollTrigger)
 
 const imagen = document.querySelectorAll('imagen-loca').offsetHeight;
-// gsap.to(".izquierda", {
-//     x: -50,
-//     duration: 3,
-//     scrollTrigger: ".izquierda"
-// })
-
-let conte = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#conte",
-        pin: true,
-        start: "bottom",
-        end: "top",
-        scrub: 4,
-    }
-});
 
 let conteprin = gsap.timeline({
     scrollTrigger: {
         trigger: ".conprin",
         pin: true,
+        // markers:true,
         start: "top top",
         end: "bottom",
         scrub: 2,
     }
 });
-
-// let contemedio = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: ".contemedio",
-//         pin: true,
-//         start: "top top",
-//         end: "bottom",
-//         scrub: 2,
-//     }
-// });
 
 conteprin.to(".context", {
     duration: 2,
@@ -80,10 +56,10 @@ gsap.to(".izquierda", {
     duration: 3,
     scrollTrigger: {
         trigger: ".izquierda",
-        start: "top bottom",
-        end: "top",
+        // start: "top bottom",
+        // end: "top",
         scrub: 2,
-        // markers: true,
+        markers: true,
         toggleClass: "red",
         toggleActions: "restart pause resume complete"
     }
@@ -94,8 +70,8 @@ gsap.to(".derecha", {
     duration: 3,
     scrollTrigger: {
         trigger: ".derecha",
-        start: "top bottom",
-        end: "top",
+        // start: "top bottom",
+        // end: "top",
         scrub: true,
         // markers: true,
         toggleClass: "red",
@@ -109,8 +85,8 @@ gsap.to(".imagen-loca", {
     ease: "bounce",
     scrollTrigger: {
         trigger: ".imagen-loca",
-        start: "top",
-        end: "bottom",
+        start: "top center",
+        end: "bottom center",
         scrub: 2,
         // markers: true,
         // toggleClass: "bg-danger",
@@ -134,6 +110,23 @@ gsap.to(".jou", {
     }
 })
 
+// EPA
+gsap.to(".izquierda", {
+    x: -50,
+    duration: 3,
+    scrollTrigger: ".izquierda"
+})
+
+let conte = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".conte",
+        start: " bottom",
+        end: "bottom",
+        scrub: 2,
+    }
+});
+
+
 conte.from(".jouDos", {
     x: 80,
     duration: 4,
@@ -143,11 +136,12 @@ conte.from(".jouDos", {
 }).from(".texto1", {
     duration: 8,
     delay: 0.5,
-    y: 25,
+    // y: 25,
     autoAlpha: 0,
     ease: 'power4',
 })
 
+// EPA
 
 
 // gsap.to(".fondo-desaparece", {
